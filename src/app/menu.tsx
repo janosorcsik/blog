@@ -1,14 +1,14 @@
-'use client'
+"use client"
 
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon } from '@heroicons/react/20/solid'
-import { XMarkIcon as XMarkIconOutline } from '@heroicons/react/24/outline'
-import Link from 'next/link'
-import { useState } from 'react'
+import { Dialog } from "@headlessui/react"
+import { Bars3Icon } from "@heroicons/react/20/solid"
+import { XMarkIcon as XMarkIconOutline } from "@heroicons/react/24/outline"
+import Link from "next/link"
+import { useState } from "react"
 
 const links = [
-  { text: 'Home', href: '/' },
-  { text: 'Articles', href: '/articles' },
+  { text: "Home", href: "/" },
+  { text: "Articles", href: "/articles" },
 ]
 
 export default function Menu() {
@@ -62,7 +62,7 @@ export default function Menu() {
                 <Link
                   key={text}
                   href={{ pathname: href }}
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-white hover:text-gray-800 hover:bg-white"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white hover:text-gray-800"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {text}

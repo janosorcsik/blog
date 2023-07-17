@@ -1,4 +1,19 @@
 {
-    "typescript.enablePromptUseWorkspaceTsdk": true,
-    "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "astro",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.formatOnSave": true,
+  "prettier.documentSelectors": [
+    "**/*.{cjs,mjs,ts,tsx,astro,md,mdx,json,yaml,yml}"
+  ]
 }

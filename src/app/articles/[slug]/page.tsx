@@ -1,5 +1,5 @@
-import { getPostBySlug } from '@/lib/blogUtils'
-import ReactMarkdown from 'react-markdown'
+import { getPostBySlug } from "@/lib/blogUtils"
+import ReactMarkdown from "react-markdown"
 
 type PageProps = {
   params: { slug: string }

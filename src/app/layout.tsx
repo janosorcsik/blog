@@ -1,9 +1,9 @@
-import './globals.css'
+import "./globals.css"
 
-import Menu from '@/app/menu'
-import { Inter } from 'next/font/google'
+import Menu from "@/app/menu"
+import { Inter } from "next/font/google"
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] })
 
 export default function RootLayout({
   children,
@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.className}>
-      <body className="antialiased bg-gray-900">
+      <body className="bg-gray-900 antialiased">
         <Menu />
         <article className="mx-auto w-max">{children}</article>
       </body>
