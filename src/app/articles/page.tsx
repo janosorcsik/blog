@@ -1,8 +1,8 @@
-import { getAllPostData } from "@/lib/blogUtils"
-import Link from "next/link"
+import { getAllPostData } from "@/lib/blogUtils";
+import Link from "next/link";
 
 export default async function Page() {
-  const datas = await getAllPostData()
+  const datas = await getAllPostData();
 
   return (
     <ul role="list" className="divide-y divide-gray-100">
@@ -31,8 +31,8 @@ export default async function Page() {
               </Link>
             </div>
           </li>
-        )
+        );
       })}
     </ul>
-  )
+  );
 }

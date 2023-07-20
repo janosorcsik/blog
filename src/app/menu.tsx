@@ -1,18 +1,18 @@
-"use client"
+"use client";
 
-import { Dialog } from "@headlessui/react"
-import { Bars3Icon } from "@heroicons/react/20/solid"
-import { XMarkIcon as XMarkIconOutline } from "@heroicons/react/24/outline"
-import Link from "next/link"
-import { useState } from "react"
+import { Dialog } from "@headlessui/react";
+import { Bars3Icon } from "@heroicons/react/20/solid";
+import { XMarkIcon as XMarkIconOutline } from "@heroicons/react/24/outline";
+import Link from "next/link";
+import { useState } from "react";
 
 const links = [
   { text: "Home", href: "/" },
   { text: "Articles", href: "/articles" },
-]
+];
 
 export default function Menu() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="flex h-16 border-b border-gray-900/10">
@@ -33,7 +33,7 @@ export default function Menu() {
               <Link key={text} href={{ pathname: href }}>
                 {text}
               </Link>
-            )
+            );
           })}
         </nav>
         <div className="flex flex-1 items-center justify-end gap-x-8"></div>
@@ -67,11 +67,11 @@ export default function Menu() {
                 >
                   {text}
                 </Link>
-              )
+              );
             })}
           </div>
         </Dialog.Panel>
       </Dialog>
     </header>
-  )
+  );
 }

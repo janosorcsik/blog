@@ -1,14 +1,14 @@
-import "./globals.css"
+import "./globals.css";
 
-import Menu from "@/app/menu"
-import { Inter } from "next/font/google"
+import Menu from "@/app/menu";
+import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" className={inter.className}>
@@ -17,5 +17,5 @@ export default function RootLayout({
         <article className="mx-auto w-max">{children}</article>
       </body>
     </html>
-  )
+  );
 }
