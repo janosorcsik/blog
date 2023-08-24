@@ -1,4 +1,5 @@
 import "./globals.css";
+import "prismjs/themes/prism-okaidia.css";
 
 import Menu from "@/app/menu";
 import { Inter } from "next/font/google";

@@ -23,7 +23,7 @@ export async function getAllPostData(): Promise<PostData[]> {
 
   const postDatas = await Promise.all(
     files.map(async (file) => {
-      const slug = file.replace(".md", "");
+      const slug = file.replace(/\.md$/, "");
       const {
         data: { title, author },
       } = await getPostBySlug(slug);
