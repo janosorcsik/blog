@@ -13,7 +13,7 @@
     "@heroicons/react": "^2.0.18",
     "@tailwindcss/typography": "^0.5.10",
     "@types/eslint": "^9.0.0",
-    "@types/node": "^20.10.4",
+    "@types/node": "^22.0.0",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
     "autoprefixer": "^10.4.16",
