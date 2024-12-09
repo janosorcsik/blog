@@ -25,7 +25,7 @@ export default async function Page() {
             <div className="flex flex-none items-center gap-x-4">
               <Link
                 href={{ pathname: `/articles/${slug}` }}
-                className="hidden rounded-md bg-gray-900 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-white hover:text-gray-900 sm:block"
+                className="hidden rounded-md bg-gray-900 px-2.5 py-1.5 text-sm font-semibold text-white ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-white hover:text-gray-900 sm:block"
               >
                 View post<span className="sr-only">, {title}</span>
               </Link>
